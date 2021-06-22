@@ -46,12 +46,12 @@ public class GmailClientTest {
         gmailClient = new GmailClient(gmailCredential);
     }
 
-    @Test
-    public void testUnreadEmails() throws IOException, MessagingException, ParseException {
-        List<Email> emails = gmailClient.getAllUnreadEmails("aman.singh@nextscm.com");
-        System.out.println("Total mails to read: " + emails.size());
-//        printFileContents(emails.get(1).getAttchFiles().get(0));
-    }
+//    @Test
+//    public void testUnreadEmails() throws IOException, MessagingException, ParseException {
+//        List<Email> emails = gmailClient.getAllUnreadEmails("aman.singh@nextscm.com");
+//        System.out.println("Total mails to read: " + emails.size());
+////        printFileContents(emails.get(1).getAttchFiles().get(0));
+//    }
 
     private void printFileContents(File file) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
